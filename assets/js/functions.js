@@ -12,3 +12,18 @@ window.onclick = function(event) {
         }
     }
 }
+
+$('.sliderHome').slick({
+    slidesToShow: 2,
+    dots: true,
+    arrows: true,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            arrows: false,
+            slidesToShow: 1
+          }
+        },
+      ]
+  });
