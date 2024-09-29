@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: Poppins;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #693D90, #E71883);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.slick-slider .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #D9D9D9;
+  border-radius: 8px;
+  text-rendering: auto;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.slick-slider .slick-arrow.slick-prev {
+  position: absolute;
+  left: 0;
+  margin-left: 8px;
+}
+
+.slick-slider .slick-arrow.slick-prev::before,
+.slick-slider .slick-arrow.slick-next::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  content: '';
+  display: block;
+  width: 24px;
+  height: 19px;
+}
+
+.slick-slider .slick-arrow.slick-prev::before {
+  background-image: url('data:image/svg+xml,<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4979 0.483014C12.1674 1.12703 12.1674 2.1712 11.4979 2.81521L5.85294 8.24557H22.2857C23.2325 8.24557 24 8.98391 24 9.89469C24 10.8055 23.2325 11.5438 22.2857 11.5438H5.85294L11.4979 16.9742C12.1674 17.6182 12.1674 18.6623 11.4979 19.3064C10.8284 19.9504 9.743 19.9504 9.07353 19.3064L0.502103 11.0608C-0.167368 10.4168 -0.167368 9.37261 0.502103 8.72859L9.07353 0.483014C9.743 -0.161005 10.8284 -0.161005 11.4979 0.483014Z" fill="%23454040"/></svg>');
+}
+
+.slick-slider .slick-arrow.slick-next {
+  position: absolute;
+  right: 0;
+  margin-right: 8px;
+}
+
+.slick-slider .slick-arrow.slick-next::before {
+  background-image: url('data:image/svg+xml,<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5021 19.3065C11.8326 18.6625 11.8326 17.6184 12.5021 16.9743L18.1471 11.544L1.71429 11.544C0.767512 11.544 7.93757e-07 10.8056 8.74228e-07 9.89486C9.54698e-07 8.98408 0.767512 8.24575 1.71429 8.24575L18.1471 8.24575L12.5021 2.81539C11.8326 2.17137 11.8326 1.12721 12.5021 0.48319C13.1716 -0.16083 14.257 -0.16083 14.9265 0.48319L23.4979 8.72876C24.1674 9.37278 24.1674 10.4169 23.4979 11.061L14.9265 19.3065C14.257 19.9506 13.1716 19.9506 12.5021 19.3065Z" fill="%23454040"/></svg>');
+}
+
+.slick-dots {
+  display: flex !important;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 32px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 91px;
+  height: 8px;
+
+  background-color: #D9D9D9;
+  border-radius: 8px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #ec4899;
+}
+
+.slick-dots li.slick-active button:active {
+  background-color: #be123c;
+}
+

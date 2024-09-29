@@ -1,16 +1,18 @@
 function toggleDropdown() {
-    var dropdown = document.getElementById("dropdownMenu");
+    const dropdown = document.getElementById("dropdownMenu");
     dropdown.classList.toggle('hidden');
 }
 
-window.onclick = function(event) {
-    if (!event.target.matches('#dropdownButton')) {
-        var dropdown = document.getElementById("dropdownMenu");
-        if (!dropdown.classList.contains('hidden')) {
-            dropdown.classList.add('hidden');
+document.addEventListener("click", function(event) {
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    if (!dropdownButton.contains(event.target)) {
+        if (!dropdownMenu.classList.contains('hidden')) {
+            dropdownMenu.classList.add('hidden');
         }
     }
-}
+});
 
 $('.sliderHome').slick({
     slidesToShow: 2,
@@ -20,10 +22,10 @@ $('.sliderHome').slick({
         {
             breakpoint: 1024,
             settings: {
-            arrows: false,
-            slidesToShow: 1
+                arrows: false,
+                slidesToShow: 1
             }
-        },
+        }
     ]
 });
 
@@ -39,24 +41,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateText() {
         const currentWord = words[currentWordIndex];
-        if (isDeleting) {
-            targetElement.textContent = currentWord.substring(0, currentCharIndex--);
-            if (currentCharIndex < 0) {
-                isDeleting = false;
-                currentWordIndex = (currentWordIndex + 1) % words.length;
-                setTimeout(() => requestAnimationFrame(updateText), typingSpeed);
-                return;
-            }
+
+        targetElement.textContent = isDeleting
+            ? currentWord.substring(0, currentCharIndex--)
+            : currentWord.substring(0, currentCharIndex++);
+
+        if (!isDeleting && currentCharIndex > currentWord.length) {
+            isDeleting = true;
+            setTimeout(() => requestAnimationFrame(updateText), delayBetweenWords);
+        } else if (isDeleting && currentCharIndex < 0) {
+            isDeleting = false;
+            currentWordIndex = (currentWordIndex + 1) % words.length;
+            setTimeout(() => requestAnimationFrame(updateText), typingSpeed);
         } else {
-            targetElement.textContent = currentWord.substring(0, currentCharIndex++);
-            if (currentCharIndex > currentWord.length) {
-                isDeleting = true;
-                setTimeout(() => requestAnimationFrame(updateText), delayBetweenWords);
-                return;
-            }
+            const speed = isDeleting ? deletingSpeed : typingSpeed;
+            setTimeout(() => requestAnimationFrame(updateText), speed);
         }
-        const speed = isDeleting ? deletingSpeed : typingSpeed;
-        setTimeout(() => requestAnimationFrame(updateText), speed);
     }
 
     requestAnimationFrame(updateText);
@@ -70,4 +70,3 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.classList.toggle('hidden');
     });
 });
-
