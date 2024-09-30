@@ -60,48 +60,76 @@
                         </a>
                     </div>
                     <div class="hidden xl:flex items-center justify-end">
-                        <nav class="flex gap-x-8 items-center">
-                            <div class="relative" id="dropdownContainer">
-                                <button id="dropdownButton" class="px-4 py-2 rounded focus:outline-none flex items-center font-medium" onclick="toggleDropdown()">
-                                    Cursos <i class="fas fa-chevron-down ml-2"></i>
-                                </button>
-                                <div id="dropdownMenu" class="hidden absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow-md">
-                                    <ul class="py-1 bg-white-100 text-gray-700">
-                                        <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 1</a></li>
-                                        <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 2</a></li>
-                                        <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 3</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
-                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
-                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
-                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
-                            <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
-                                Login
-                            </a>
+                        <nav>
+                            <ul class="flex gap-x-8 items-center">
+                                <li>
+                                    <div class="relative" id="dropdownContainer">
+                                        <button id="dropdownButton" class="px-4 py-2 rounded focus:outline-none flex items-center font-medium" onclick="toggleDropdown()">
+                                            Cursos <i class="fas fa-chevron-down ml-2"></i>
+                                        </button>
+                                        <div id="dropdownMenu" class="hidden absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow-md">
+                                            <ul class="py-1 bg-white-100 text-gray-700">
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 1</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 2</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
                 </div>
             </div>
             <div id="mobileMenu" class="hidden xl:hidden bg-white shadow-md">
-                <nav class="flex flex-col space-y-4 px-4 py-4">
-                    <a href="curso.html" class="text-base font-medium text-black-900 hover:text-gray-500">Cursos</a>
-                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
-                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
-                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
-                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
-                    <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
-                        Login
-                    </a>
+                <nav>
+                    <ul class="flex flex-col space-y-4 px-4 py-4">
+                        <li>
+                            <a href="curso.html" class="text-base font-medium text-black-900 hover:text-gray-500">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
 
-        <main class="pt-[105px] min-h-[calc(100vh-362px)]">
+        <main class="pt-[105px] min-h-[calc(100vh-312px)]">
             <section class="bg-gray-100 pb-5">
                 <div class="max-w-7xl mx-auto">
-                    <div class="p-6 pb-0 md:px-8 md:py-16 xl:flex items-center gap-20">
+                    <div class="p-6 pb-0 md:px-8 md:py-16 xl:flex items-center gap-20 [&>div.e-con-inner]:xl:flex [&>div.e-con-inner]:items-center [&>div.e-con-inner]:gap-20">
                         <div class="w-full xl:w-5/12 my-8">
                             <h1 class="text-2xl md:text-3xl leading-tight font-medium mb-3">A escola de quem <span id="text-animation" class="gradient-text font-bold min-w-[60px] inline-block whitespace-nowrap">otimiza</span> SEO</h1>
                             <p class="mb-4 text-xl leading-tight">Some seu conhecimento ao de profissionais referência no mercado e acelere seu aprendizado em SEO.</p>
@@ -116,7 +144,7 @@
                                 </a>
                             </p>
                         </div>
-                        <div class="flex flex-wrap gap-3">
+                        <div class="flex flex-wrap gap-3 [&>div.e-con-inner]:flex [&>div.e-con-inner]:flex-wrap [&>div.e-con-inner]:gap-3">
                             <div class="hidden sm:block sm:w-[32%] xl:w-auto text-center">
                                 <div class="bg-black-900 text-white-100 rounded-lg overflow-hidden shadow-lg p-3">
                                     <h5 class="text-lg font-semibold">Nilton Alvares</h5>
@@ -149,7 +177,7 @@
             <section class="max-w-7xl mx-auto my-14 px-8">
                 <div class="sliderHome">
                     <div class="bg-gray-100 w-full border-white-100 border-8 p-8 !flex flex-col md:flex-row items-center gap-8 !rounded-lg">
-                        <img loading="lazy" class="w-full sm:w-auto" src="assets/img/img-formacoes.png" width="182" height="260" alt="">
+                        <img loading="lazy" class="w-full [&>img]:w-[182px] sm:w-auto" src="assets/img/img-formacoes.png" width="182" height="260" alt="">
                         <div class="flex flex-col gap-3">
                             <h4 class="text-xl font-medium">Formações</h4>
                             <p class="text-sm">Cursos aprofundados e com teória prática de SEO nos 6 pilares estratégicos. (SEO Técnico, On-page, Off-page, Conteúdo, Cultura e Produto & Tecnologia.</p>
@@ -217,7 +245,7 @@
                 </div>
             </section>
             <section class="max-w-7xl mx-auto">
-                <div class="mx-7 my-6 p-6 md:px-8 md:py-16 bg-gray-100 lg:flex items-center gap-20 rounded-lg">
+                <div class="mx-7 my-6 p-6 md:px-8 md:py-16 bg-gray-100 lg:flex [&>div.e-con-inner]:lg:flex [&>div.e-con-inner]:items-center items-center [&>div.e-con-inner]:gap-20 gap-20 rounded-lg">
                     <div class="w-full xl:w-9/12 my-8">
                         <h3 class="text-xl md:text-2xl font-medium mb-3">Aprenda com cases de <span class="gradient-text font-bold">empresas</span> como:</h3>
                         <p>Aprenda com quem faz a gestão de SEO em grandes empresas. Se prepare para aplicar o conhecimento adquirido imediatamente.</p>
@@ -238,11 +266,11 @@
                     <div class="flex flex-col mb-6">
                         <div class="flex flex-col xl:flex-row gap-10 items-center">
                             <div class="flex flex-col md:flex-row gap-6 items-center">
-                                <div class="flex flex-col order-2 md:order-1 text-center md:text-right text-balance">
+                                <div class="flex flex-col order-2 md:order-1 xl:min-w-[376px] text-center md:text-right text-balance">
                                     <h4 class="text-xl font-semibold">Conteúdo teórico prático e imersivo:</h4>
                                     <p class="text-lg">Somos contra o conteúdo superficial e de baixo valor.</p>
                                 </div>
-                                <div class="flex order-1 md:order-2 justify-center items-center bg-pink-300 rounded-2xl w-full h-screen max-w-40 max-h-40">
+                                <div class="flex order-1 md:order-2 justify-center items-center bg-pink-300 rounded-2xl w-40 min-w-40 h-40">
                                     <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M51.3 83.7V54.9H56.7V83.7H51.3Z" fill="white"/>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M52.4945 57.6L27 41.7697L29.4055 37.8L54.9 53.6304L52.4945 57.6Z" fill="white"/>
@@ -256,7 +284,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col md:flex-row gap-6 items-center">
-                                <div class="flex order-1 md:order-1 justify-center items-center bg-purple-800 rounded-2xl w-full h-screen max-w-40 max-h-40">
+                                <div class="flex order-1 md:order-1 justify-center items-center bg-purple-800 rounded-2xl w-40 min-w-40 h-40">
                                     <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M51.3 83.7V54.9H56.7V83.7H51.3Z" fill="white"/>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M52.4945 57.6L27 41.7697L29.4055 37.8L54.9 53.6304L52.4945 57.6Z" fill="white"/>
@@ -268,7 +296,7 @@
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.752 78.3V99.684C4.752 100.629 5.12749 101.536 5.79587 102.204C6.46425 102.873 7.37076 103.248 8.316 103.248H29.7V108H8.316C6.11046 108 3.99526 107.124 2.4357 105.564C0.876146 104.005 0 101.89 0 99.684V78.3H4.752Z" fill="white"/>
                                     </svg>
                                 </div>
-                                <div class="flex flex-col order-2 md:order-2 text-center md:text-left text-balance">
+                                <div class="flex flex-col order-2 md:order-2 xl:min-w-[376px] text-center md:text-left text-balance">
                                     <h4 class="text-xl font-semibold">Conteúdo teórico prático e imersivo:</h4>
                                     <p class="text-lg">Somos contra o conteúdo superficial e de baixo valor.</p>
                                 </div>
@@ -327,7 +355,7 @@
             <section class="max-w-7xl mx-auto my-6 px-8">
                 <h3 class="mt-8 mb-5 text-xl font-semibold">Próximas gravações</h3>
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
-                    <div class="bg-black text-white rounded-lg overflow-hidden">
+                    <div class="bg-black text-white rounded-lg overflow-hidden [&>div>a>img]:w-full">
                         <a href="#">
                             <img loading="lazy" src="./assets/img/img-prox-gravacoes.png" width="578" height="224" alt="SEO Técnico" class="w-full">
                         </a>
