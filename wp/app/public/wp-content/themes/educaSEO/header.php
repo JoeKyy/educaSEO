@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
 
+	<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+
     <!-- Facebook Card data -->
     <meta property="og:title" content="">
     <meta property="og:site_name" content="">
