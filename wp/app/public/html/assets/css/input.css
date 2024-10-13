@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'https://cdn.jsdelivr.net/npm/tailwindcss@latest/tailwind.min.css';
-
 html,
 body {
   font-family: Poppins;

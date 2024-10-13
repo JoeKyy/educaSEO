@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
-
+	
 	<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
     <!-- Facebook Card data -->
@@ -79,7 +79,7 @@
                                 ) );
                             ?>
                             <li>
-                                <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                <a href="/educaSEO/student-registration/" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
                                     Login
                                 </a>
                             </li>
@@ -100,7 +100,7 @@
                         ) );
                     ?>
                     <li>
-                        <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                        <a href="/educaSEO/student-registration/" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
                             Login
                         </a>
                     </li>
