@@ -126,58 +126,90 @@
             </div>
         </header>
          <!-- Main Content -->
-         <main class="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 py-10">
-            <!-- Sidebar -->
-            <aside class="col-span-1 lg:col-span-3 bg-neutral-100 py-8 rounded-2xl">
-                <ul class="mt-14 mx-4 space-y-4">
-                    <li><a href="#" class="block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded">Início</a></li>
-                    <li><a href="#" class="block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded">Cursos</a></li>
-                    <li><a href="#" class="block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded">Novidades</a></li>
-                    <li><a href="#" class="block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded">Grupo de WhatsApp</a></li>
-                    <li><a href="#" class="block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded">Hackathon</a></li>
-                    <li><a href="#" class="block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded">Configurações</a></li>
-                </ul>
-            </aside>
+         <main>
+            <div class="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Main Section -->
+                <section class="col-span-1 lg:col-span-9">
+                    <article class="mb-6">
+                        <header class="mb-4">
+                            <h1 class="text-2xl font-bold">Quem somos</h1>
+                        </header>
+                        <div class="post-content space-y-4">
+                            <img class="w-full h-auto object-cover rounded-lg" src="https://placehold.co/820x205?text=Image" alt="">
 
-            <!-- Main Section -->
-            <section class="col-span-1 lg:col-span-9">
-                <h1 class=" text-2xl font-bold mb-6">Comece por aqui</h1>
-
-                <!-- Itens com cards e texto -->
-                <div class="grid space-y-6">
-                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-x-4">
-                        <div class="bg-pink-300 w-full h-screen max-h-32 md:min-w-48 md:w-48 md:h-32 rounded-lg flex justify-center items-center object-cover">
-                            <!-- Ícone ou imagem -->
+                            <h2 class="text-lg font-semibold">Propósito</h2>
+                            <p class="text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not .</p>
+                            <h2 class="text-lg font-semibold">Propósito</h2>
+                            <p class="text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not .</p>
+                            <h2 class="text-lg font-semibold">Propósito</h2>
+                            <p class="text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not .</p>
                         </div>
-                        <div>
-                            <p class="text-lg text-black">Não sabe por onde começar? Receba essa indicação de conteúdo.</p>
+                    </article>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="col-span-1 lg:col-span-3">
+                    <div class="space-y-4">
+                        <!-- Imagem do Professor -->
+                        <div class="flex justify-center mb-6">
+                            <a href="#" title="Assista o trailer">
+                                <img class="w-full h-auto rounded-lg" src="assets/img/img-trailer.png" alt="Professor">
+                            </a>
+                        </div>
+
+                        <!-- Valor de Acesso Mensal -->
+                        <div class="text-center bg-gray-100 w-full py-6 rounded-2xl">
+                            <p class="text-balance">Acesso ao curso e à comunidade por mês</p>
+                            <p class="text-2xl font-bold mt-1">R$ 21,90*</p>
+                        </div>
+
+                        <!-- Benefícios da Plataforma -->
+                        <div class="text-center bg-gray-100 w-full py-6 text-base rounded-2xl">
+                            <p class="mb-4 font-semibold">Mais de 100 cursos de SEO disponíveis na plataforma</p>
+                            <ul class="px-3 text-center space-y-1 text-xs text-pink-300">
+                                <li><span class="text-green-500">✔</span> Acesso a todos os cursos e aulas</li>
+                                <li><span class="text-green-500">✔</span> Acesso à gravação dos cursos na plateia</li>
+                                <li><span class="text-green-500">✔</span> Acesso aos eventos e happy hours</li>
+                                <li><span class="text-green-500">✔</span> Comunidade no WhatsApp</li>
+                                <li><span class="text-green-500">✔</span> Acesso ao sorteio do SEO Hackathon</li>
+                            </ul>
+                        </div>
+
+                        <!-- Botão Solicitar Demo -->
+                        <div class="flex flex-col justify-center mb-6">
+                            <p class="mb-3">
+                                <a href="#" class="whitespace-nowrap inline-flex w-full items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-lg font-regular text-white-100 bg-pink-300 hover:bg-pink-400">
+                                    Solicitar a demo
+                                </a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="#" class="whitespace-nowrap inline-flex w-full items-center justify-center px-4 py-2 border border-pink-300 rounded-md shadow-sm text-lg font-regular text-black-900 bg-transparent hover:bg-pink-400">
+                                    EducaSEO em 1 minuto
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Área para imagem ou gráfico (icones ou outro conteúdo) -->
+                        <div class="text-center bg-gray-100 w-full p-6 text-base rounded-2xl">
+                            <div class="bg-[url('assets/img/bg-hr.png')] bg-[length:1120px] w-full h-52"></div>
                         </div>
                     </div>
-
-                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-x-4">
-                        <div class="bg-pink-300 w-full h-screen max-h-32 md:min-w-48 md:w-48 md:h-32 rounded-lg flex justify-center items-center object-cover">
-                            <!-- Ícone ou imagem -->
-                        </div>
-                        <div>
-                            <p class="text-lg text-black">Quanto mais cursos você participar, maiores serão as suas chances de ganhar o convite do Hackathon.</p>
-                        </div>
+                </aside>
+            </div>
+            <section class="max-w-7xl mx-auto">
+                <div class="mx-7 my-6 p-6 md:px-8 md:py-16 bg-gray-100 lg:flex items-center gap-20 rounded-lg">
+                    <div class="w-full xl:w-9/12 my-8">
+                        <h3 class="text-xl md:text-2xl font-medium mb-3">Aprenda com cases de <span class="gradient-text font-bold">empresas</span> como:</h3>
+                        <p>Aprenda com quem faz a gestão de SEO em grandes empresas. Se prepare para aplicar o conhecimento adquirido imediatamente.</p>
                     </div>
-
-                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-x-4">
-                        <div class="bg-pink-300 w-full h-screen max-h-32 md:min-w-48 md:w-48 md:h-32 rounded-lg flex justify-center items-center object-cover">
-                            <!-- Ícone ou imagem -->
-                        </div>
-                        <div>
-                            <p class="text-lg text-black">Quer participar das gravações dos cursos? A plateia mais SEO do Brasil. Solicite o seu agendamento aqui.</p>
-                        </div>
+                    <div class="flex flex-wrap gap-4">
+                        <img loading="lazy" class="w-5/12 md:w-auto" src="./assets/img/img-logo-nu.png" width="204" height="110" alt="Nubank">
+                        <img loading="lazy" class="w-5/12 md:w-auto" src="./assets/img/img-logo-sofa.png" width="204" height="110" alt="Sofa na Caixa">
+                        <img loading="lazy" class="w-5/12 md:w-auto" src="./assets/img/img-logo-casas_bahia.png" width="204" height="110" alt="Casas Bahia">
+                        <img loading="lazy" class="w-5/12 md:w-auto" src="./assets/img/img-logo-kabum.png" width="204" height="110" alt="Kabum">
+                        <img loading="lazy" class="w-5/12 md:w-auto" src="./assets/img/img-logo-ponto.png" width="204" height="110" alt="Ponto">
+                        <img loading="lazy" class="w-5/12 md:w-auto" src="./assets/img/img-logo-motorola.png" width="204" height="110" alt="Motorola">
                     </div>
-                </div>
-
-                <!-- Botão de chamada para ação -->
-                <div class="mt-8">
-                    <a href="#" class="block w-full bg-pink-300 text-white-100 text-center py-4 rounded-lg font-semibold hover:bg-pink-500">
-                        Indique membros e ganhe chances para o convite do Hackathon
-                    </a>
                 </div>
             </section>
         </main>

@@ -44,52 +44,91 @@
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <header class="bg-white">
+        <header class="fixed z-20 w-full bg-white-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
-                <div class="flex justify-center xl:justify-between items-center py-6 space-x-10">
-                    <div class="flex justify-start xl:w-full max-w-48 xl:flex-1">
+                <div class="flex justify-between items-center py-6">
+                    <div class="flex xl:hidden">
+                        <button id="menuButton" title="menu" type="button" class="text-black-900 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex justify-start w-full xl:flex-1">
                         <a href="index.html" class="w-full inline-block">
-                            <img loading="lazy" class="w-full max-w-48 h-auto" src="assets/img/img-logo.png" width="199" height="60" alt="EducaSEO">
+                            <img loading="lazy" class="w-full max-w-48 h-auto mx-auto xl:mx-0" src="assets/img/img-logo.png" width="199" height="60" alt="EducaSEO">
                         </a>
                     </div>
                     <div class="hidden xl:flex items-center justify-end">
-                        <nav class="flex gap-x-8 items-center">
-                            <div class="relative" id="dropdownContainer">
-                                <button id="dropdownButton" class="px-4 py-2 rounded focus:outline-none flex items-center font-medium" onclick="toggleDropdown()">
-                                    Cursos <i class="fas fa-chevron-down ml-2"></i>
-                                </button>
-                                <div id="dropdownMenu" class="hidden absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow-md">
-                                    <ul class="py-1 bg-white-100 text-gray-700">
-                                        <li><a href="#" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 1</a></li>
-                                        <li><a href="#" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 2</a></li>
-                                        <li><a href="#" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 3</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="#" class="text-base font-medium text-black-900 hover:text-gray-500">
-                                Para empresas
-                            </a>
-                            <a href="#" class="text-base font-medium text-black-900 hover:text-gray-500">
-                                SEO Hackathon
-                            </a>
-                            <a href="#" class="text-base font-medium text-black-900 hover:text-gray-500">
-                                Blog
-                            </a>
-                            <a href="#" class="text-base font-medium text-black-900 hover:text-gray-500">
-                                FAQ
-                            </a>
-                            <a href="#" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
-                                Login
-                            </a>
+                        <nav>
+                            <ul class="flex gap-x-8 items-center">
+                                <li>
+                                    <div class="relative" id="dropdownContainer">
+                                        <button id="dropdownButton" class="px-4 py-2 rounded focus:outline-none flex items-center font-medium" onclick="toggleDropdown()">
+                                            Cursos <i class="fas fa-chevron-down ml-2"></i>
+                                        </button>
+                                        <div id="dropdownMenu" class="hidden absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow-md">
+                                            <ul class="py-1 bg-white-100 text-gray-700">
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 1</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 2</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
                 </div>
             </div>
+            <div id="mobileMenu" class="hidden xl:hidden bg-white shadow-md">
+                <nav>
+                    <ul class="flex flex-col space-y-4 px-4 py-4">
+                        <li>
+                            <a href="curso.html" class="text-base font-medium text-black-900 hover:text-gray-500">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
          <!-- Main Content -->
-         <main class="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-16 py-10">
+         <main class="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 py-10">
             <!-- Sidebar -->
-            <aside class="col-span-1 md:col-span-3 bg-neutral-100 py-8 rounded-2xl">
+            <aside class="col-span-1 lg:col-span-3 bg-neutral-100 py-8 rounded-2xl">
                 <ul class="mt-14 mx-4 space-y-4">
                     <li><a href="#" class="block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded">Início</a></li>
                     <li><a href="#" class="block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded">Cursos</a></li>
@@ -101,7 +140,7 @@
             </aside>
 
             <!-- Main Section -->
-            <section class="col-span-1 md:col-span-9">
+            <section class="col-span-1 lg:col-span-9">
                 <!-- Título da seção -->
                 <h1 class="text-2xl font-bold mb-6">Cursos</h2>
 
