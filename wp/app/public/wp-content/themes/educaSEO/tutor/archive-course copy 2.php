@@ -23,7 +23,7 @@ get_header();
 						</div>
 					</div>
 				</header>
-				<main>
+				<main class="pt-[105px] min-h-[calc(100vh-312px)]">
 					<div class="container">
 						<?php
 							/* Start the Loop */
