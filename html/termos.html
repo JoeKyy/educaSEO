@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>educaSEO</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+
+        <!-- Facebook Card data -->
+        <meta property="og:title" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:creator" content="">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+        <meta name="msapplication-TileImage" content="./assets/img/favicon/apple-icon-144x144.png">
+        <link rel="manifest" href="./assets/img/favicon/manifest.json">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header class="fixed z-20 w-full bg-white-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+                <div class="flex justify-between items-center py-6">
+                    <div class="flex xl:hidden">
+                        <button id="menuButton" title="menu" type="button" class="text-black-900 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex justify-start w-full xl:flex-1">
+                        <a href="index.html" class="w-full inline-block">
+                            <img loading="lazy" class="w-full max-w-48 h-auto mx-auto xl:mx-0" src="assets/img/img-logo.png" width="199" height="60" alt="EducaSEO">
+                        </a>
+                    </div>
+                    <div class="hidden xl:flex items-center justify-end">
+                        <nav>
+                            <ul class="flex gap-x-8 items-center">
+                                <li>
+                                    <div class="relative" id="dropdownContainer">
+                                        <button id="dropdownButton" class="px-4 py-2 rounded focus:outline-none flex items-center font-medium" onclick="toggleDropdown()">
+                                            Cursos <i class="fas fa-chevron-down ml-2"></i>
+                                        </button>
+                                        <div id="dropdownMenu" class="hidden absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow-md">
+                                            <ul class="py-1 bg-white-100 text-gray-700">
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 1</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 2</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden xl:hidden bg-white shadow-md">
+                <nav>
+                    <ul class="flex flex-col space-y-4 px-4 py-4">
+                        <li>
+                            <a href="curso.html" class="text-base font-medium text-black-900 hover:text-gray-500">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+         <!-- Main Content -->
+         <main class="pt-[105px] min-h-[calc(100vh-312px)]">
+            <div class="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                <!-- Main Section -->
+                <section>
+                    <article class="mb-6">
+                        <header class="mb-4">
+                            <h1 class="text-2xl font-bold">Termos e Condições de  Uso</h1>
+                        </header>
+                        <div class="post-content space-y-4">
+                            <p>EDUCASEO - ESCOLA TECNOLÓGICA PARA MARKETING DE BUSCA LTDA ("Educaseo"), sociedade anônima, inscrita no CNPJ/MF sob o no 57.046.832/0001-66, com sede na Cidade de São Paulo, Estado de São Paulo, na Rua Samuel Morse - cj 81, Cidade Monções - CEP 04.576-060, é empresa proprietária da plataforma EducaSEO (https://educaseo.com.br) ("Plataforma") que oferece: (i) cursos, formações, certificações para aprimoramento profissional e gerencial; (ii) workshops e palestras virtuais; (iii) acesso a comunidade de integrantes da EducaSEO ("Serviços").</p>
+                            <p>Por intermédio destes Termos de Uso e Condições Gerais de Contratação ("Termos"), a EducaSEO apresenta aos contratantes interessados ("Usuários") as condições essenciais para o uso da Plataforma e para a Prestação dos Serviços.</p>
+                            <p>Ao utilizar a ("Plataforma"), disponibilizada pela EducaSEO, o Usuário aceita e se submete às condições destes Termos e às Políticas de Privacidade.</p>
+                            <p>1. DEFINIÇÕES</p>
+                            <p>Para os fins deste documento, devem se considerar as seguintes definições e descrições para seu melhor entendimento:</p>
+                            <p>PLATAFORMA:</p>
+                            <p>Designa a plataforma digital de propriedade da EducaSEO, por meio da qual ela oferece os seus Serviços e demais ações acessórias a estes: (i) cursos, certificações; (ii) workshops e encontros ao vivo; (iii) acesso a comunidade de integrantes da EducaSEO; (iv) canais de atendimento.</p>
+                            <p>PLANO:</p>
+                            <p>Modelo de contratação por meio do qual o Usuário terá acesso a Plataforma e Serviços da EducaSEO.</p>
+                            <p>USUÁRIO:</p>
+                            <p>Toda e qualquer pessoa física que usufrui dos Serviços fornecidos pela EducaSEO, tendo contratado diretamente na Plataforma em seu nome ou via indicação ou patrocínio total ou parcial por empresa ("Cliente Corporativo") com a qual o Usuário possua relação.</p>
+                            <p>CONTEÚDO:</p>
+                            <p>Todo e qualquer texto, informação, conteúdo gráficos, imagens, música, áudio, vídeo, informação ou outros materiais disponibilizados na Plataforma, independentemente de ser Conteúdo do Usuário ou Conteúdo da EducaSEO.</p>
+                            <p>CONTEÚDO DA EDUCASEO:</p>
+                            <p>Todo e qualquer conteúdo (informação, conteúdo gráficos, imagens, música, áudio, vídeo, informação ou outros materiais) que a EducaSEO disponibilizar através da Plataforma, aplicativos, mensagens instantâneas, ou qualquer outro meio ou quaisquer formatos, incluindo qualquer conteúdo licenciado de terceiros, mas excluindo o do Contratante.</p>
+                            <p>CONTEÚDO DE CONTRATANTE:</p>
+                            <p>Todo e qualquer conteúdo (informação, conteúdo gráficos, imagens, música, áudio, vídeo, informação ou outros materiais) que o Usuário postar, transferir, publicar, apresentar ou transmitir para ser disponibilizado por meio da Plataforma.</p>
+                            <p>CURSOS:</p>
+                            <p>Os Cursos consistem na troca e repasse de experiência por palestrantes, experts e profissionais com expertise e conhecimento ao Usuário por meio da Plataforma da EducaSEO através de videoaulas gravadas, desafios práticos, tutoriais de ferramentas e testes de conhecimento. Os Usuários que participarem dos Cursos e consumirem todo o Conteúdo disponibilizado farão jus a um Badge.</p>
+                            <p>WORKSHOPS:</p>
+                            <p>A EducaSEO oferece Workshops em sua Plataforma. Workshops são compostos por uma sequência pré-definida de encontros ao vivo disponíveis na Plataforma, com foco na aplicabilidade do conhecimento. Em uma série de encontros, as estudantes serão conduzidas pelo especialista para executar um projeto ou se aprofundar em um estudo de caso. Para completar um Workshop, é preciso participar (ou assistir à gravação) de todos os encontros da série.</p>
+                            <p>ENCONTROS PRESENCIAIS:</p>
+                            <p>Os encontros presenciais são eventos interativos e imersivos, com agendamentos prévios onde o link a ser fornecido na Plataforma, com data e hora disponibilizadas na agenda, com participação de especialistas nas áreas de conhecimento, com foco em estudos de caso, tutoriais de ferramentas e debates sobre tendências do mercado.</p>
+                            <p>CERTIFICAÇÕES:</p>
+                            <p>Conjunto de Cursos estruturados por meio de elaboração de cronograma, programação e temática previamente definidos pela EducaSEO com o objetivo de oferecer o aprimoramento profissional ou gerencial aos Usuários, com temas relacionados à gestão empresarial e ao desenvolvimento de negócios no mercado de tecnologia e inovação. Para completar um Certificado, é preciso consumir todos os Cursos que compõem aquele </p>
+                            <p>Certificado, exceto aqueles que estiverem indicados como "Opcional". Ao finalizar um Certificado, a certificação é disponibilizada na Plataforma e poderá ser utilizada para compartilhar em redes sociais profissionais.</p>
+                            <p>BADGE:</p>
+                            <p>Badge é uma certificação avulsa de estudo, ligada a habilidades individuais, oferecida ao completar um Curso ou um Workshop.</p>
+                            <p>COMUNIDADE:</p>
+                            <p>Os Usuários terão acesso à Comunidade disponibilizada pela EducaSEO para interação e comunicação com outros Usuários. O acesso nas Comunidades é realizado por meio de plataforma parceira da EducaSEO. As Comunidades poderão ter temas específicos, definidos exclusivamente pela EducaSEO, além de terem como objetivo aumentar a conexão e rede de contatos de Usuários.</p>
+                            <p>URL: Terminologia para endereço de internet.</p>
+                            <p>SISTEMA DE PAGAMENTO:</p>
+                            <p>Sistema utilizado pela EducaSEO em parceria com empresas especializadas em serviços financeiros para cobrança e gestão dos pagamentos. A EducaSEO conta com o apoio de parceiras de Sistema de Pagamento: (i) VINDI: empresária limitada com razão social VINDI PAGAMENTOS LTDA., nome fantasia Vindi, inscrita no CNPJ/MF sob n° 24.816.123/0001-63, com sede na Rua do Paraiso, 148, andar 16 sala vnd - Paraiso - São Paulo/SP - CEP 04.103-000, detentora da Plataforma Vindi, hospedado sob o domínio https://vindi.com.br/; (ii) PROVI: empresa de recebimento de valores referentes a Serviços , com razão social PROVI SOLUÇÕES E SERVIÇOS LTDA., inscrita no CNPJ/MF sob o nº 32.390.384/0001-92, com sede na Av. Dr. Cardoso de Melo, 1340, Cj. 11, Vila Olímpia, São Paulo - SP - CEP 04548-004, hospedado sob o domínio https://provi.com.br/; e</p>
+                            <p>HUBSPOT:</p>
+                            <p>Plataforma utilizada pela EducaSEO de softwares de marketing, vendas, atendimento ao Usuário e CRM.</p>
+                            <p>ZOOM MEETINGS:</p>
+                            <p>Plataforma de videoconferências com armazenamento das gravações em nuvem e que permite trocas de mensagens entre os participantes da chamada, por meio de chat, bem como o compartilhamento de tela de forma online. Importante ressaltar que a esta plataforma se vale de série de medidas de segurança, as quais têm por finalidade proteger os dados pessoais dos seus Usuários. Caso o Usuário tenha interesse em saber mais, deve buscar informações diretamente na plataforma Zoom Meetings.</p>
+                            <p>2. OBJETO</p>
+                            <p>2.1 O presente Termo tem como objeto estabelecer os termos e condições para uso da Plataforma pelo Usuário e para a prestação dos Serviços pela EducaSEO.</p>
+                            <p>2.2. Por meio da aquisição do plano da Plataforma da EducaSEO, o Usuário terá acesso as seguintes funcionalidades:</p>
+                            <p>(i) Cursos;</p>
+                            <p>(iii) Certificações;</p>
+                            <p>(iii) Workshops;</p>
+                            <p>(iv) Encontros ao vivo; e</p>
+                            <p>(v) Comunidade.</p>
+                            <p>2.3 A EducaSEO terá autonomia na execução dos Serviços disponibilizados em sua Plataforma.                          </p>
+                            <p>2.4 Ao se cadastrar, o Usuário poderá utilizar todos os Serviços disponibilizados na Plataforma disponíveis, declarando, para tanto, ter lido, compreendido e aceitado os Termos.</p>
+                            <p>3. CAPACIDADE PARA CADASTRO NA PLATAFORMA</p>
+                            <p>3.1 Os Serviços da EducaSEO estão disponíveis para pessoas físicas regularmente inscritas nos cadastros de contribuintes federal e estaduais que, com exceção aos Usuários menores de idade, para os quais a EducaSEO se reserva o direito de solicitar informações e autorizações dos responsáveis que tenham capacidade legal para contratá-los. Não podem utilizá-los, assim, pessoas que tenham sido inabilitadas da EducaSEO, temporária ou definitivamente.</p>
+                            <p>3.2 É vedada a criação de mais de um cadastro por Contratante. Em caso de multiplicidade de cadastros elaborados por um só Usuário, a EducaSEO reserva-se o direito de, a seu exclusivo critério e sem necessidade de prévia anuência dos ou comunicação aos Usuários, inabilitar todos os cadastros existentes e impedir eventuais cadastros futuros vinculados a estes.</p>
+                            <p>3.2.1. Somente será permitida a vinculação de um cadastro a um CPF, um telefone e um e-mail, não podendo haver duplicidade de dados em nenhum caso.</p>
+                            <p>3.3. A EducaSEO pode unilateralmente excluir o cadastro dos Usuários quando verificado que a conduta do Usuário é incompatível com o disposto no presente Termos, ou prejudicial e/ou ofensiva a outros Contratantes, à EducaSEO e aos seus funcionários ou a terceiros.</p>
+                            <p>4. CADASTRO</p>
+                            <p>4.1. É necessário o preenchimento completo de todos os dados pessoais exigidos pela EducaSEO no momento do cadastramento para que o Usuário esteja habilitado a utilizar a Plataforma, com exceção do acesso aos conteúdos gratuitos disponibilizados pela EducaSEO na Plataforma.</p>
+                            <p>4.2. É de exclusiva responsabilidade do Usuário fornecer, atualizar e garantir a veracidade dos dados cadastrais, não cabendo à EducaSEO qualquer tipo de responsabilidade civil e criminal resultante de dados inverídicos, incorretos ou incompletos fornecidos pelos Usuários.</p>
+                            <p>4.3. A EducaSEO reserva-se o direito de utilizar todos os meios válidos e possíveis para identificar seus Usuários, bem como de solicitar dados adicionais e documentos que estime serem pertinentes a fim de conferir os dados pessoais informados.</p>
+                            <p>4.4. Caso a EducaSEO considere um cadastro, ou as informações nele contidas, suspeito de conter dados errôneos ou inverídicos, a EducaSEO se reserva o direito de suspender, temporária ou definitivamente, o Usuário responsável pelo cadastramento, sem prejuízo de outras medidas que entenda necessárias e oportunas. No caso de aplicação de quaisquer destas sanções, não assistirá ao Usuário direito a qualquer tipo de indenização ou ressarcimento por perdas e danos, lucros cessantes ou danos morais.</p>
+                            <p>4.5. O Usuário acessará sua conta por meio de conta pessoal do Google ou por token a ser enviado para o e-mail cadastrado pelo Contratante, comprometendo-se a não informar a terceiros esses dados, responsabilizando-se integralmente pelo mau uso.</p>
+                            <p>4.6. O Usuário compromete-se a notificar a EducaSEO imediatamente, por meio dos canais de contato mantidos na Plataforma, a respeito de qualquer uso não autorizado de sua conta. O Usuário será o único responsável pelas operações efetuadas em sua conta, uma vez que o acesso só será possível mediante a utilização de meios de acesso de seu exclusivo conhecimento.</p>
+                            <p>4.7. Em nenhuma hipótese será permitida a cessão, venda, locação ou outra forma de transferência da conta. Não se permitirá, ainda, a criação de novos cadastros por pessoas cujos cadastros originais tenham sido cancelados por infrações aos Termos e às Políticas da EducaSEO.</p>
+                            <p>4.8. A EducaSEO se reserva o direito de, unilateralmente e sem prévio aviso, recusar qualquer solicitação de cadastro e de cancelar um cadastro previamente aceito, em especial quando se tratar de tentativa de cadastro de Usuário que não cumpriu com as obrigações e/ou tenha tido seu cadastro cancelado pela EducaSEO e razão de utilização da Plataforma de maneira contrária ao presentes Termos, Políticas da EducaSEO ou aos bons costumes.</p>
+                            <p>4.9. Após adquirir o Serviço desejado e realizar o pagamento do mesmo, o Usuário EducaSEO acesso à Plataforma, ambiente online por meio do qual são disponibilizados materiais para estudo e acompanhamentos</p>
+                            <p>4.10. Ao se cadastrar na Plataforma, o Contratante declara ter lido, compreendido e aceitado os Termos e Política de Privacidade.</p>
+                            <p>5. TEMPO DE ACESSO</p>
+                            <p>5.1. O Usuário está ciente e aceita que EducaSEO acesso aos Serviços disponibilizados na Plataforma de acordo com o presente Termos, por 12 meses a partir da data de contratação do plano escolhido.                           5.2. Durante o período de acesso, o Usuário está ciente que para aquisição dos Certificados ou Badges, deverá cumprir os requisitos específicos dos Cursos ou Certificações.</p>
+                            <p>6. REMUNERAÇÃO</p>
+                            <p>6.1. Pelos Serviços da Plataforma, o Usuário deverá realizar o pagamento dos valores descritos neste link no momento da compra: https://educaseo.com.br</p>
+                            <p>6.2. Caso os Serviços da Plataforma sejam contratados pelo Cliente Corporativo as condições de pagamento serão estipuladas em contrato particular a ser firmado entre as Partes.</p>
+                            <p>6.2.1. O acesso à Plataforma para o Usuário somente será liberado após a identificação pela EducaSEO do pagamento da Remuneração ou, se for o caso, após a identificação pela EducaSEO do contrato assinado entre a EducaSEO e o Cliente Corporativo.</p>
+                            <p>6.3. Quando o pagamento for realizado pelo Usuário, este deverá ser realizado através do Sistema de Pagamento utilizado pela EducaSEO.</p>
+                            <p>6.3.1. O Usuário está ciente, concorda e aceita que nos casos de atraso de pagamento por meio de boleto bancário ou cartão de crédito, será cobrada multa de 2% (dois por cento) por mês e juros moratórios de 1% (um por cento) por mês do valor da parcela em atraso.</p>
+                            <p>6.4. A EducaSEO declara, para todos os fins, que não é responsável pela emissão das cobranças por boletos e/ou cartão de crédito e nem pelo recebimento dos pagamentos de Remuneração referentes aos Serviços ofertados. </p>
+                            <p>Para tais atividades, a EducaSEO utilizará como intermediária os Sistemas de Pagamento: (i) a solução de pagamentos online ou Vindi; e/ou </p>
+                            <p>(ii) a plataforma de crédito e financiamento Provi, sendo estas as únicas e exclusivas responsáveis pela cobrança e pela gestão dos pagamentos efetuados pelo Usuário ou do Cliente Corporativo à EducaSEO, devendo estes conferirem os Termos de Uso destas empresas, disponíveis nos respectivos websites:(ii) https://vindi.com.br/; (iii) https://provi.com.br/; visto que estes deverão ser interpretados em conjunto com o presente Termos.</p>
+                            <p>7. CANCELAMENTO</p>
+                            <p>7.1. O Usuário somente poderá realizar o cancelamento dos Serviços em até 07 (sete) dias a contar da contratação da Plataforma. A eventual devolução de quaisquer valores acontecerá de acordo com o formato de pagamento escolhido pelo Usuário.</p>
+                            <p>7.1.1. Outras hipóteses serão avaliados caso a caso pela EducaSEO. Para dúvidas, entre em contato com a equipe de atendimento pela Plataforma.</p>
+                            <p>7.2. Por meio da contratação da Plataforma, o Usuário terá acesso a todos os Serviços pelo prazo de 12 (doze) meses,.</p>
+                            <p>7.3. A EducaSEO se reserva o direito de excluir unilateralmente e a seu exclusivo critério, comentários e cadastros de Usuários que contenham/pratiquem o quanto segue, não sendo devido nenhum valor ao Usuário à título de rescisão ou indenização, incluindo, mas não limitado aos valores acima descritos nesse capítulo:</p>
+                            <p>7.3.1. Ofensa à honra, imagem, reputação e dignidade de terceiros;</p>
+                            <p>7.3.2. Pornografia, pedofilia, e outras modalidades de satisfação sexual;</p>
+                            <p>7.3.3. Racismo ou discriminação de qualquer natureza;</p>
+                            <p>7.3.4. Bullying, Stalking ou qualquer outra espécie de constrangimento ilegal ou assédio;</p>
+                            <p>7.3.5. Manifesta violação a direito autoral ou direito de imagem;</p>
+                            <p>7.3.6. Utilização de marcas, símbolos, logotipos ou emblemas de terceiros;</p>
+                            <p>7.3.7. Instigação ou apologia à prática de crimes, como tráfico ou uso de entorpecentes, estupro, homicídio, estelionato, dentre outros;</p>
+                            <p>7.3.8. Erros ou suspeita de equívocos; e</p>
+                            <p>7.3.9. Compartilhamento de acesso à Plataforma com terceiros.</p>
+                            <p>8. PROIBIÇÕES DOS USUÁRIOS</p>
+                            <p>8.1. É vedado ao Usuário:</p>
+                            <p>8.1.1. Usar a Plataforma ou qualquer dos Conteúdos nela disponibilizados para fim comercial ou para demais finalidades que não seja pessoal, particular e individual.</p>
+                            <p>8.1.2. Postar, publicar ou distribuir qualquer conteúdo ofensivo, falso, inapropriado, pornográfico, racista, humilhante, vulgar, vingativo, ameaçador, duvidoso ou difamatório.</p>
+                            <p>8.1.3. Postar, publicar ou distribuir qualquer conteúdo que viole as leis, direitos de propriedade intelectual (especialmente direito autoral).</p>
+                            <p>8.1.4. Acessar a conta na Plataforma de terceiro, seja de Usuário ou assumir identidade falsa ou afiliação falsa com outra pessoa ou entidade.</p>
+                            <p>8.1.5. Engajar em atividade fraudulenta, mandar spam, fazer publicidade de ou promover outros sites, produtos ou serviços.</p>
+                            <p>8.1.6. Usar a Plataforma para qualquer intuito ilegal ou que viole leis locais, estaduais, nacionais ou internacionais.</p>
+                            <p>8.1.7. Difamar, abusar, ameaçar, fraudar, agredir ou ofender qualquer Usuário da Plataforma ou tentar coletar informações pessoais sobre um Usuário ou um terceiro sem sua expressa permissão.</p>
+                            <p>8.1.8. Remover, desabilitar, invadir, danificar, burlar ou interferir com qualquer aspecto de segurança da Plataforma, Conteúdo do Contratante.                         <p></p>8.1.9. Fazer engenharia reversa, descompilar, desconstruir ou tentar descobrir o código fonte da Plataforma.</p>
+                            <p>8.1.10. Modificar, adaptar, traduzir ou criar qualquer trabalho derivativo da Plataforma sem a autorização expressa da EducaSEO.</p>
+                            <p>8.1.11. Interferir ou danificar a experiência de outros Usuários na Plataforma, incluindo participação em ataques de negação de serviço, vírus, propaganda indesejada ou qualquer outro código malicioso.</p>
+                            <p>8.1.12. Compartilhar com terceiros o acesso à conta do Usuário na Plataforma.</p>
+                            <p>9. AUTORIZAÇÃO DO USO DE IMAGEM, SOM DA VOZ E NOME DO CONTRATANTE</p>
+                            <p>9.1. Em razão da gravação das Treinamentos na plataforma Zoom Meetings, o Usuário desde já concede autorização expressa e gratuita, com seu livre consentimento, para a EducaSEO efetuar a captura, guarda, manipulação, edição e uso da imagem do Usuário para fins publicitários, promocionais, de identificação, autenticação, segurança, registro de atividades, acervo histórico, uso institucional, educativo e social, o que inclui os eventos promovidos pela EducaSEO, inclusive em seus perfis oficiais nas mídias sociais, website,                          <p></p>Plataforma ou portal institucional, Intranet, quadro de avisos ou similar, vídeos institucionais, entre outros conteúdos que possam ser criados ou produzidos em razão da atividade educacional, tendo, por isso, pela própria característica técnica da internet, alcance global e prazo indeterminado, podendo inclusive alcançar sites e outros ambientes digitais externos, independente da vontade e do controle da EducaSEO.</p>
+                            <p>9.2. A EducaSEO ressalva os direitos do Usuário sobre a integridade da sua honra, sua reputação, boa fama ou a respeitabilidade, sendo que o uso de sua imagem, som da voz ou nome devem ser feitos apenas nos limites acordados, sem, de forma alguma, expor o Usuário ao ridículo ou a situações constrangedoras, atendendo as leis em vigor no Brasil. </p>
+                            <p>No entanto, a EducaSEO não será responsabilizada se a imagem do Usuário vier a ser compartilhada em outros ambientes digitais externos aos da EducaSEO, fora da sua esfera de controle e alcance.  </p>
+                            <p>10. FOTOS, FILMAGENS E GRAVAÇÕES</p>
+                            <p>10.1. É proibido ao Usuário tirar fotos, gravar, filmar, publicar e/ou compartilhar imagens da Plataforma da EducaSEO, de outros colegas, docentes, colaboradores ou quaisquer terceiros, sem autorização prévia da EducaSEO, à exceção das situações já previamente avisadas e autorizadas de eventos educacionais sociais, campeonatos e outros, por sua natureza mais pública e de compartilhamento de informações e desde que o teor do conteúdo não gere constrangimento nem ridicularização dos envolvidos.</p>
+                            <p>10.2. A EducaSEO está ciente de que se o Usuário quiser por algum motivo de melhoria de aprendizagem registrar qualquer Conteúdo da EducaSEO  ministrado pelo Expert, Convidado, Palestrante ou outro representante, seja por vídeo ou áudio, deverá pedir autorização prévia ao Expert, Convidado, Palestrante ou outro representante, que deverá consentir especificamente para a aula em questão e o conteúdo captado deve ser utilizado apenas para fim pessoal, com propósito de aprendizado do Contratante, sendo vedada a sua publicação do conteúdo integral do referido Treinamento na internet ou compartilhamento com terceiros externos à comunidade institucional.                         <p></p>10.3. O compartilhamento público e não autorizado em qualquer meio, inclusive na internet, mídias sociais, celulares e aplicativos sociais, de conteúdos extraídos de dentro da Plataforma , é considerado uma infração e será tratado como um agravante de conduta para fins de aplicação de medida disciplinar para o Contratante.</p>
+                            <p>11. POLÍTICA DE PRIVACIDADE</p>
+                            <p>11.1. Os presentes Termos estão sujeitos às disposições e às condições relacionadas à privacidade indicadas na Política de Privacidade da EducaSEO, a qual poderá ser acessada pelo link a seguir: https://educaseo.com.br/privacidade.</p>
+                            <p>11.2. Os Usuários e o Cliente Corporativo estão cientes que a EducaSEO realiza o tratamento de dados e informações pessoais de acordo com as leis de proteção de dados aplicáveis, conforme descrição na Política de Privacidade e demais documentos disponibilizados pela EducaSEO em sua Plataforma, que fazem parte do presente Termos de Uso.</p>
+                            <p>11.3. É vedada a utilização de dispositivo, software ou outro recurso que possa interferir nas atividades e nas operações de Plataforma, bem como nos anúncios, nas descrições, nas contas ou em seus bancos de dados. Qualquer intromissão, tentativa de, ou atividade que viole ou contrarie as leis de direito de propriedade intelectual e as proibições estipuladas nestes Termos tornará o responsável passível de sofrer os efeitos das ações legais pertinentes, bem como das sanções aqui previstas, sendo ainda responsável por indenizar a EducaSEO por eventuais danos causados.</p>
+                            <p>12. SANÇÕES</p>
+                            <p>12.1. Sem prejuízo de outras medidas, a EducaSEO poderá, a seu exclusivo critério e sem necessidade de prévia anuência ou comunicação ao Contratante, advertir, suspender ou cancelar, temporária ou permanentemente, o cadastro deste, iniciando as ações legais cabíveis e suspendendo a prestação dos Serviços ao Usuário em questão, se: (i) o Usuário não cumprir qualquer dispositivo destes Termos e as demais políticas de EducaSEO; (ii) descumprir com seus deveres de Usuários; (iii) praticar atos delituosos ou criminais; (iv) não puder ser verificada a identidade do Contratante, qualquer informação fornecida por ele esteja incorreta ou se as informações prestadas levarem a crer que o cadastro seja falso ou de pessoa diversa; e (v) EducaSEO entender que os comentários, postagens e/ou qualquer outra atitude do Usuário tenham causado algum dano a terceiros ou a EducaSEO ou tenham a potencialidade de assim o fazer.</p>
+                            <p>12.2. A EducaSEO reserva-se o direito de, a qualquer momento e a seu exclusivo critério, solicitar o envio de documentação pessoal ou de qualquer documento que comprove a veracidade das informações cadastrais.</p>
+                            <p>12.3. A suspensão do acesso do Usuário à Plataforma poderá ocorrer nas seguintes hipóteses                          <p></p>a) Inadimplência: ao ser constatada falta de pagamento, seja por qualquer meio (boleto ou cartão de crédito), o acesso do Usuário à Plataforma será suspenso em até 5 (cinco) dias da data da inadimplência.                        <p></p>b) Em qualquer hipótese prevista no item 7 destes Termos (exceto quando for relativo à transferência de Treinamento ou Turma).</p>
+                            <p>13. LIMITES ÀS RESPONSABILIDADES DA EDUCASEO</p>
+                            <p>13.1. A EducaSEO não se responsabiliza:</p>
+                            <p>13.1.1. Por qualquer dado que seja transmitido pelo Usuário no uso da Plataforma e/ou durante a prestação do Serviço.</p>
+                            <p>13.1.2. Pela emissão das cobranças por boletos e/ou cartão de crédito e nem pelo recebimento dos pagamentos referentes aos Serviços ofertados. Para tais atividades, a EducaSEO utilizará como intermediária os Sistema de Pagamento pela cobrança e pela gestão dos pagamentos efetuados pelos Usuários ou Clientes Corporativos a EducaSEO.</p>
+                            <p>13.1.3. Por vícios ou defeitos técnicos e/ou operacionais oriundos do sistema do Usuário, de terceiros, de caso fortuito ou de força maior, incluindo, mas não se limitando a, hipóteses de falta de energia elétrica ou mau funcionamento de sistemas independentes de prestação de serviço.</p>
+                            <p>13.1.4. Por qualquer dano, prejuízo ou perda sofridos pelo Usuário em razão de falhas em sua conexão com a internet, com o seu provedor, no sistema ou no servidor utilizado pelo Usuário, decorrentes de condutas de terceiros, caso fortuito ou força maior.</p>
+                            <p>13.1.5. Pela compatibilidade entre a sua Plataforma e hardwares de propriedade do Usuário. O Usuário deverá manter o seu equipamento atualizado e não poderá responsabilizar EducaSEO caso a Plataforma não seja acessível em equipamentos antiquados.</p>
+                            <p>13.1.6. Por oferecer ou providenciar equipamentos ou qualquer infraestrutura ou ferramentas aos Usuário para que estes possam participar dos Treinamentos ou Treinamentos.</p>
+                            <p>13.1.7. Por qualquer vírus, trojan, malware, spyware ou qualquer software que possa danificar, alterar as configurações ou infiltrar o equipamento do Usuário em decorrência do acesso, da utilização ou da navegação na internet, ou como consequência da transferência de dados, informações, arquivos, imagens, textos ou áudio.</p>
+                            <p>13.1.8. Ainda, pela guarda e consequente indenização decorrente do extravio, furto, avaria ou dos danos causados a quaisquer objetos levados ao seu estabelecimento, bem como por qualquer quantia em dinheiro, aparelhos eletrônicos ou documentos, pertencentes ou sob a posse do Usuário ou de seus prepostos ou acompanhantes quando nas dependências da EducaSEO, exceto se decorrentes de atos de quaisquer de seus colaboradores devidamente certificados e comprovados; e</p>
+                            <p>13.1.9. Por qualquer dano causado por atos de indisciplina do Usuário que venha a gerar prejuízo a terceiros, inclusive outros alunos, sendo que a completa responsabilidade recairá sobre o Contratante.</p>
+                            <p>14. PROPRIEDADE INTELECTUAL</p>
+                            <p>14.1. O uso comercial da expressão "EducaSEO" como marca, nome empresarial ou nome de domínio, bem como os logos, marcas, insígnias, conteúdo das telas relativas aos Serviços da Plataforma e o conjunto de programas, bancos de dados, redes e arquivos que permitem que o Usuário acesse e use sua conta, são propriedade da EducaSEO e estão protegidos pelas leis e pelos tratados internacionais de direito autoral, de marcas, de patentes, de modelos e de desenhos industriais. Por conta disso, é proibido usar indevidamente e/ou reproduzir, total ou parcialmente, qualquer destes conteúdos, salvo com autorização expressa de EducaSEO.</p>
+                            <p>14.2. Todo Conteúdo da EducaSEO é de propriedade da Plataforma e a utilização, exploração, divulgação, compartilhamento de referidos Conteúdos pelos Usuários sujeitará o Usuário responsável a multa no valor de R$30.000,00 (trinta mil reais), acrescido do valor total de receita perdida pela EducaSEO em decorrência das ações supracitadas nessa cláusula cometidas pelo Contratante, além de danos morais e à imagem, outros danos advindos a serem apurados oportunamente.</p>
+                            <p>14.3. O Usuário assume responsabilidade integral por violações de direito de autor, propriedade intelectual e direito de imagem cometidos pelo ele na confecção de seus trabalhos, atividades e apresentações, e assumirá o compromisso de não praticar pirataria, plágio, infração de direito autoral ou de uso não autorizado de imagem de terceiro, inadequação ou ausência de citação de fonte e autoria nas referências e notas bibliográficas, conforme o padrão ABNT.</p>
+                            <p>15. INDENIZAÇÃO</p>
+                            <p>15.1. O Usuário indenizará a EducaSEO, suas filiais, empresas controladas, controladores diretos ou indiretos, diretores, administradores, colaboradores, representantes e empregados, inclusive quanto aos honorários advocatícios, por qualquer demanda promovida por outros Usuários ou terceiros, decorrentes das atividades do Usuário na Plataforma, por descumprimentos dos Termos e das demais políticas de EducaSEO ou, ainda, de qualquer violação, pelo Contratante, de lei, normas ou de direitos de terceiros.</p>
+                            <p>16. MODIFICAÇÕES DOS TERMOS DE USO E DISPOSIÇÕES GERAIS</p>
+                            <p>16.1. A EducaSEO poderá alterar, a qualquer tempo e a seu único e exclusivo critério, os Termos de Uso da Plataforma. Os novos Termos de Uso entrarão em vigor 10 (dez) dias depois de publicados na Plataforma. No prazo de 5 (cinco) dias contados a partir da publicação das modificações, o Usuário deverá informar, por e-mail, caso não concorde com os termos de uso da plataforma que foram alterados. Nesse caso, o vínculo contratual deixará de existir, desde que não haja contas ou dívidas em aberto. Não havendo manifestação no prazo estipulado, entender-se-á que o Usuário aceitou tacitamente os novos Termos. Mesmo com a alteração dos Termos de Uso, as Condições Gerais de Contratação dos Serviços continuam vinculando as partes.</p>
+                            <p>16.2. Estes Termos não geram nenhum contrato de sociedade, de mandato, de franquia ou relação de trabalho entre EducaSEO e o Usuário.</p>
+                            <p>16.3. Os Serviços oferecidos pela EducaSEO poderão ser diferentes para cada Usuário, conforme informações acerca do Treinamento que participa. Estes Termos deverão ser interpretados de acordo com as informações pelas quais foi efetuado o cadastro do Usuário.</p>
+                            <p>17. LEGISLAÇÃO APLICÁVEL E FORO DE ELEIÇÃO</p>
+                            <p>17.1. Todos os itens destes Termos são regidos pelas leis vigentes na República Federativa do Brasil.</p>
+                            <p>17.2. Para todos os assuntos referentes à interpretação, ao cumprimento ou a qualquer outro questionamento relacionado a estes Termos, as Partes concordam em se submeter ao Foro da Comarca de São Paulo.</p>
+                            <p>O Usuário declara ter lido, entendido e aceitado todas as regras, condições e obrigações estabelecidas nos presentes Termos de Uso e Condições Gerais de Contratação.                           <p></p>São Paulo/SP, 19 de maio de 2023, acesso e utilização da Plataforma e demais aplicações.</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-gray-300 font-regular text-black-900 mt-20 py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-8">
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Formações</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">SEO Técnico</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO On-page</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO Off-page</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO Conteúdo</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Estratégia Produto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Cursos rápidos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">JavaScript</a></li>
+                        <li><a href="#" class="hover:text-gray-700">HTML</a></li>
+                        <li><a href="#" class="hover:text-gray-700">CSS</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Auditoria Técnica</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Projeção de Ganhos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO para E-commerce</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Conteúdos gratuitos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Glossário de SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Roadmap SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Programação de Gravações</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Mapa de SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Curso SEO para Iniciantes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Institucional</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Trabalhe Conosco</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Quem Somos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Nossos Cursos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Políticas de Uso</a></li>
+                    </ul>
+                    <h6 class="font-semibold text-pink-300 text-base my-2">Eventos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Hackthon SEO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" defer></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+        <script src="https://cdn.tailwindcss.com" defer></script>
+        <script src="assets/js/tailwind.config.js" defer></script>
+        <script src="assets/js/functions.js" defer></script>
+    </body>
+</html>

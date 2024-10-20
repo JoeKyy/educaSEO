@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>educaSEO</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+
+        <!-- Facebook Card data -->
+        <meta property="og:title" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:creator" content="">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+        <meta name="msapplication-TileImage" content="./assets/img/favicon/apple-icon-144x144.png">
+        <link rel="manifest" href="./assets/img/favicon/manifest.json">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header class="fixed z-20 w-full bg-white-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+                <div class="flex justify-between items-center py-6">
+                    <div class="flex xl:hidden">
+                        <button id="menuButton" title="menu" type="button" class="text-black-900 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex justify-start w-full xl:flex-1">
+                        <a href="index.html" class="w-full inline-block">
+                            <img loading="lazy" class="w-full max-w-48 h-auto mx-auto xl:mx-0" src="assets/img/img-logo.png" width="199" height="60" alt="EducaSEO">
+                        </a>
+                    </div>
+                    <div class="hidden xl:flex items-center justify-end">
+                        <nav>
+                            <ul class="flex gap-x-8 items-center">
+                                <li>
+                                    <div class="relative" id="dropdownContainer">
+                                        <button id="dropdownButton" class="px-4 py-2 rounded focus:outline-none flex items-center font-medium" onclick="toggleDropdown()">
+                                            Cursos <i class="fas fa-chevron-down ml-2"></i>
+                                        </button>
+                                        <div id="dropdownMenu" class="hidden absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow-md">
+                                            <ul class="py-1 bg-white-100 text-gray-700">
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 1</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 2</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden xl:hidden bg-white shadow-md">
+                <nav>
+                    <ul class="flex flex-col space-y-4 px-4 py-4">
+                        <li>
+                            <a href="curso.html" class="text-base font-medium text-black-900 hover:text-gray-500">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="pt-[105px] min-h-[calc(100vh-312px)]">
+            <section class="max-w-7xl mx-auto">
+                <div class="mx-7 my-6 px-8 py-20 bg-gray-100 rounded-lg">
+                    <div class="max-w-3xl mx-auto">
+                        <div class="text-center">
+                            <hr class="h-[113px] bg-[url('./assets/img/bg-hr-login.png')] bg-contain bg-center bg-no-repeat border-none">
+                        </div>
+                        <div class="mt-10 py-36 space-y-8 text-center justify-center align-center">
+                            <svg class="mx-auto" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.2882 39.2675L19.4618 31.4411C18.9826 30.9619 18.3969 30.7223 17.7048 30.7223C17.0128 30.7223 16.4004 30.9886 15.868 31.5209C15.3889 32.0001 15.1493 32.5858 15.1493 33.2779C15.1493 33.97 15.3889 34.5557 15.868 35.0348L25.6111 44.8577C26.0903 45.3369 26.6493 45.5765 27.2882 45.5765C27.9271 45.5765 28.4861 45.3369 28.9653 44.8577L48.0521 25.7709C48.5844 25.2386 48.8507 24.6262 48.8507 23.9341C48.8507 23.2421 48.5844 22.6297 48.0521 22.0973C47.5197 21.6182 46.8941 21.3918 46.1753 21.4185C45.4566 21.4452 44.8576 21.698 44.3785 22.1772L27.2882 39.2675ZM32 63.9446C27.6343 63.9446 23.508 63.106 19.6215 61.4289C15.735 59.7518 12.3409 57.4625 9.43922 54.5609C6.5376 51.6592 4.24825 48.2651 2.57117 44.3786C0.894083 40.4921 0.055542 36.3658 0.055542 32.0001C0.055542 27.5811 0.894083 23.4283 2.57117 19.5418C4.24825 15.6553 6.5376 12.2744 9.43922 9.39942C12.3409 6.52442 15.735 4.24837 19.6215 2.57129C23.508 0.894205 27.6343 0.0556641 32 0.0556641C36.419 0.0556641 40.5718 0.894205 44.4583 2.57129C48.3448 4.24837 51.7257 6.52442 54.6007 9.39942C57.4757 12.2744 59.7517 15.6553 61.4288 19.5418C63.1059 23.4283 63.9444 27.5811 63.9444 32.0001C63.9444 36.3658 63.1059 40.4921 61.4288 44.3786C59.7517 48.2651 57.4757 51.6592 54.6007 54.5609C51.7257 57.4625 48.3448 59.7518 44.4583 61.4289C40.5718 63.106 36.419 63.9446 32 63.9446ZM32 59.1529C39.5601 59.1529 45.9757 56.5042 51.2465 51.2067C56.5173 45.9092 59.1528 39.507 59.1528 32.0001C59.1528 24.44 56.5173 18.0244 51.2465 12.7536C45.9757 7.48275 39.5601 4.84733 32 4.84733C24.493 4.84733 18.0909 7.48275 12.7934 12.7536C7.49593 18.0244 4.84721 24.44 4.84721 32.0001C4.84721 39.507 7.49593 45.9092 12.7934 51.2067C18.0909 56.5042 24.493 59.1529 32 59.1529Z" fill="#E71883"/>
+                            </svg>
+                            <p class="text-2xl font-semibold">
+                                Cadastro realizado com sucesso!<br />
+                                Confirme sua inscrição via E-mail.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-gray-300 font-regular text-black-900 mt-20 py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-8">
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Formações</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">SEO Técnico</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO On-page</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO Off-page</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO Conteúdo</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Estratégia Produto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Cursos rápidos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">JavaScript</a></li>
+                        <li><a href="#" class="hover:text-gray-700">HTML</a></li>
+                        <li><a href="#" class="hover:text-gray-700">CSS</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Auditoria Técnica</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Projeção de Ganhos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO para E-commerce</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Conteúdos gratuitos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Glossário de SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Roadmap SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Programação de Gravações</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Mapa de SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Curso SEO para Iniciantes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Institucional</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Trabalhe Conosco</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Quem Somos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Nossos Cursos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Políticas de Uso</a></li>
+                    </ul>
+                    <h6 class="font-semibold text-pink-300 text-base my-2">Eventos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Hackthon SEO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" defer></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+        <script src="https://cdn.tailwindcss.com" defer></script>
+        <script src="assets/js/tailwind.config.js" defer></script>
+        <script src="assets/js/functions.js" defer></script>
+    </body>
+</html>
