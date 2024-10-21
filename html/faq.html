@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>educaSEO</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+
+        <!-- Facebook Card data -->
+        <meta property="og:title" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:creator" content="">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+        <meta name="msapplication-TileImage" content="./assets/img/favicon/apple-icon-144x144.png">
+        <link rel="manifest" href="./assets/img/favicon/manifest.json">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header class="fixed z-20 w-full bg-white-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+                <div class="flex justify-between items-center py-6">
+                    <div class="flex xl:hidden">
+                        <button id="menuButton" title="menu" type="button" class="text-black-900 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex justify-start w-full xl:flex-1">
+                        <a href="index.html" class="w-full inline-block">
+                            <img loading="lazy" class="w-full max-w-48 h-auto mx-auto xl:mx-0" src="assets/img/img-logo.png" width="199" height="60" alt="EducaSEO">
+                        </a>
+                    </div>
+                    <div class="hidden xl:flex items-center justify-end">
+                        <nav>
+                            <ul class="flex gap-x-8 items-center">
+                                <li>
+                                    <div class="relative" id="dropdownContainer">
+                                        <button id="dropdownButton" class="px-4 py-2 rounded focus:outline-none flex items-center font-medium" onclick="toggleDropdown()">
+                                            Cursos <i class="fas fa-chevron-down ml-2"></i>
+                                        </button>
+                                        <div id="dropdownMenu" class="hidden absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow-md">
+                                            <ul class="py-1 bg-white-100 text-gray-700">
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 1</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 2</a></li>
+                                                <li><a href="curso.html" class="block px-4 py-2 text-base font-medium text-black-900 hover:text-gray-500">Option 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden xl:hidden bg-white shadow-md">
+                <nav>
+                    <ul class="flex flex-col space-y-4 px-4 py-4">
+                        <li>
+                            <a href="curso.html" class="text-base font-medium text-black-900 hover:text-gray-500">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Para empresas</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">SEO Hackathon</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">Blog</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="text-base font-medium text-black-900 hover:text-gray-500">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="page.html" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+         <!-- Main Content -->
+         <main class="pt-[105px] min-h-[calc(100vh-312px)]">
+            <div class="max-w-full md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Main Section -->
+                <section class="col-span-1 lg:col-span-12">
+                    <h1 class="text-2xl font-semibold mb-8">FAQ</h1>
+
+                    <!-- Seção de FAQ com accordions -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
+                        <!-- Accordion FAQ -->
+                        <div class="space-y-4">
+                            <details class="bg-gray-50 rounded-lg p-4 group">
+                                <summary class="w-full text-left text-lg font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                                    <span>Descontos e formas de pagamento</span>
+                                    <span class="chevron inline-block transition-transform duration-300 transform group-open:rotate-180">
+                                        <svg class="w-5 h-5 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <p class="mt-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, quos non deleniti dolorum laudantium nulla, sequi error sunt voluptatibus labore vitae dolore rerum fuga ea earum eaque commodi quas quasi repudiandae distinctio praesentium dignissimos. Illo mollitia pariatur minima ex, sunt et quasi odit eius ea, quia, voluptatibus voluptatum illum itaque libero numquam sequi. Dolorum, cumque fugit! Exercitationem reprehenderit repellat quos quia, incidunt unde est fugit eaque saepe illum culpa placeat tenetur! Suscipit reprehenderit iste adipisci id perspiciatis quia veritatis aperiam eveniet distinctio quae deserunt nihil commodi similique vitae ea omnis odio impedit totam, sunt minima facere nostrum sint. Rerum, ipsa.</p>
+                            </details>
+
+                            <details class="bg-gray-50 rounded-lg p-4 group">
+                                <summary class="w-full text-left text-lg font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                                    <span>Sobre nós</span>
+                                    <span class="chevron inline-block transition-transform duration-300 transform group-open:rotate-180">
+                                        <svg class="w-5 h-5 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <p class="mt-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, quos non deleniti dolorum laudantium nulla, sequi error sunt voluptatibus labore vitae dolore rerum fuga ea earum eaque commodi quas quasi repudiandae distinctio praesentium dignissimos. Illo mollitia pariatur minima ex, sunt et quasi odit eius ea, quia, voluptatibus voluptatum illum itaque libero numquam sequi. Dolorum, cumque fugit! Exercitationem reprehenderit repellat quos quia, incidunt unde est fugit eaque saepe illum culpa placeat tenetur! Suscipit reprehenderit iste adipisci id perspiciatis quia veritatis aperiam eveniet distinctio quae deserunt nihil commodi similique vitae ea omnis odio impedit totam, sunt minima facere nostrum sint. Rerum, ipsa.</p>
+                            </details>
+
+                            <details class="bg-gray-50 rounded-lg p-4 group">
+                                <summary class="w-full text-left text-lg font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                                    <span>Sobre as formações</span>
+                                    <span class="chevron inline-block transition-transform duration-300 transform group-open:rotate-180">
+                                        <svg class="w-5 h-5 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <p class="mt-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, quos non deleniti dolorum laudantium nulla, sequi error sunt voluptatibus labore vitae dolore rerum fuga ea earum eaque commodi quas quasi repudiandae distinctio praesentium dignissimos. Illo mollitia pariatur minima ex, sunt et quasi odit eius ea, quia, voluptatibus voluptatum illum itaque libero numquam sequi. Dolorum, cumque fugit! Exercitationem reprehenderit repellat quos quia, incidunt unde est fugit eaque saepe illum culpa placeat tenetur! Suscipit reprehenderit iste adipisci id perspiciatis quia veritatis aperiam eveniet distinctio quae deserunt nihil commodi similique vitae ea omnis odio impedit totam, sunt minima facere nostrum sint. Rerum, ipsa.</p>
+                            </details>
+
+                            <details class="bg-gray-50 rounded-lg p-4 group">
+                                <summary class="w-full text-left text-lg font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                                    <span>Hackathon</span>
+                                    <span class="chevron inline-block transition-transform duration-300 transform group-open:rotate-180">
+                                        <svg class="w-5 h-5 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <p class="mt-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, quos non deleniti dolorum laudantium nulla, sequi error sunt voluptatibus labore vitae dolore rerum fuga ea earum eaque commodi quas quasi repudiandae distinctio praesentium dignissimos. Illo mollitia pariatur minima ex, sunt et quasi odit eius ea, quia, voluptatibus voluptatum illum itaque libero numquam sequi. Dolorum, cumque fugit! Exercitationem reprehenderit repellat quos quia, incidunt unde est fugit eaque saepe illum culpa placeat tenetur! Suscipit reprehenderit iste adipisci id perspiciatis quia veritatis aperiam eveniet distinctio quae deserunt nihil commodi similique vitae ea omnis odio impedit totam, sunt minima facere nostrum sint. Rerum, ipsa.</p>
+                            </details>
+
+                            <details class="bg-gray-50 rounded-lg p-4 group">
+                                <summary class="w-full text-left text-lg font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                                    <span>Formações</span>
+                                    <span class="chevron inline-block transition-transform duration-300 transform group-open:rotate-180">
+                                        <svg class="w-5 h-5 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <p class="mt-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, quos non deleniti dolorum laudantium nulla, sequi error sunt voluptatibus labore vitae dolore rerum fuga ea earum eaque commodi quas quasi repudiandae distinctio praesentium dignissimos. Illo mollitia pariatur minima ex, sunt et quasi odit eius ea, quia, voluptatibus voluptatum illum itaque libero numquam sequi. Dolorum, cumque fugit! Exercitationem reprehenderit repellat quos quia, incidunt unde est fugit eaque saepe illum culpa placeat tenetur! Suscipit reprehenderit iste adipisci id perspiciatis quia veritatis aperiam eveniet distinctio quae deserunt nihil commodi similique vitae ea omnis odio impedit totam, sunt minima facere nostrum sint. Rerum, ipsa.</p>
+                            </details>
+
+                            <details class="bg-gray-50 rounded-lg p-4 group">
+                                <summary class="w-full text-left text-lg font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                                    <span>Assinaturas e garantias</span>
+                                    <span class="chevron inline-block transition-transform duration-300 transform group-open:rotate-180">
+                                        <svg class="w-5 h-5 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </summary>
+                                <p class="mt-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, quos non deleniti dolorum laudantium nulla, sequi error sunt voluptatibus labore vitae dolore rerum fuga ea earum eaque commodi quas quasi repudiandae distinctio praesentium dignissimos. Illo mollitia pariatur minima ex, sunt et quasi odit eius ea, quia, voluptatibus voluptatum illum itaque libero numquam sequi. Dolorum, cumque fugit! Exercitationem reprehenderit repellat quos quia, incidunt unde est fugit eaque saepe illum culpa placeat tenetur! Suscipit reprehenderit iste adipisci id perspiciatis quia veritatis aperiam eveniet distinctio quae deserunt nihil commodi similique vitae ea omnis odio impedit totam, sunt minima facere nostrum sint. Rerum, ipsa.</p>
+                            </details>
+                        </div>
+
+                        <!-- Imagem ao lado do FAQ -->
+                        <div class="flex justify-center lg:justify-end">
+                            <img class="w-full h-auto rounded-lg" src="https://placehold.co/700x450?text=Image" alt="FAQ Image">
+                        </div>
+                    </div>
+
+                    <!-- Seção de pesquisa -->
+                    <div class="mt-16">
+                        <div class="bg-pink-300 p-6 rounded-lg grid grid-cols-12 sm:flex-row items-center">
+                            <h2 class="col-span-12 lg:col-span-3 text-white-100 text-xl font-semibold mb-4 sm:mb-0 sm:mr-4">Pesquise sua dúvida</h2>
+                            <div class="col-span-12 lg:col-span-9 flex items-center w-full">
+                                <input type="text" placeholder="Ex: pesquisa aqui a sua dúvida" class="w-full py-3 px-4 text-gray-800 rounded-l-lg focus:outline-none">
+                                <button type="submit" title="Buscar" class="bg-gray-900 text-white-100 py-3 px-6 rounded-r-lg">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <footer class="bg-gray-300 font-regular text-black-900 mt-20 py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-8">
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Formações</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">SEO Técnico</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO On-page</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO Off-page</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO Conteúdo</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Estratégia Produto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Cursos rápidos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">JavaScript</a></li>
+                        <li><a href="#" class="hover:text-gray-700">HTML</a></li>
+                        <li><a href="#" class="hover:text-gray-700">CSS</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Auditoria Técnica</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Projeção de Ganhos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">SEO para E-commerce</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Conteúdos gratuitos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Glossário de SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Roadmap SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Programação de Gravações</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Mapa de SEO</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Curso SEO para Iniciantes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-semibold text-pink-300 text-base mb-2">Institucional</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Trabalhe Conosco</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Quem Somos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Nossos Cursos</a></li>
+                        <li><a href="#" class="hover:text-gray-700">Políticas de Uso</a></li>
+                    </ul>
+                    <h6 class="font-semibold text-pink-300 text-base my-2">Eventos</h6>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-700">Hackthon SEO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" defer></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+        <script src="https://cdn.tailwindcss.com" defer></script>
+        <script src="assets/js/tailwind.config.js" defer></script>
+        <script src="assets/js/functions.js" defer></script>
+    </body>
+</html>
