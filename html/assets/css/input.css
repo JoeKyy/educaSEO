@@ -92,3 +92,15 @@ body {
   background-color: #be123c;
 }
 
+.wp-block-list {
+  margin-left: 2rem;
+  padding-left: 0.75rem;
+  list-style-type: disc;
+}
+
+.wp-block-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}

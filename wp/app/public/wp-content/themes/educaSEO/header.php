@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
-	
+
 	<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
     <!-- Facebook Card data -->
@@ -109,4 +109,4 @@
         </div>
     </header>
 
-    <main class="pt-[105px] min-h-[calc(100vh-362px)]">
+    <main class="pt-[105px] min-h-[calc(100vh-312px)]">

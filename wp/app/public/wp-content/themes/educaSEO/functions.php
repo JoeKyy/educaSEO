@@ -4,10 +4,10 @@ function educaseo_widgets_init(): void
     register_sidebar(args: [
         "name" => esc_html__(text: "Sidebar Widget Area", domain: "educaseo"),
         "id" => "primary-widget-area",
-        "before_widget" => '<li id="%1$s" class="widget-container %2$s">',
-        "after_widget" => "</li>",
-        "before_title" => '<h3 class="widget-title">',
-        "after_title" => "</h3>",
+        "before_widget" => '',
+        "after_widget" => '',
+        "before_title" => '',
+        "after_title" => '',
     ]);
 }
 
@@ -51,6 +51,72 @@ function educaseo_remove_elementor_styles() {
 }
 add_action('elementor/frontend/after_register_styles', 'educaseo_remove_elementor_styles', 20);
 
+function custom_search_form($form) {
+    $form = '
+    <form role="search" method="get" class="search-form" action="' . esc_url(home_url('/')) . '">
+        <label for="s" class="sr-only">' . esc_html__('Buscar:', 'textdomain') . '</label>
+        <input type="search" id="s" class="appearance-none rounded-md relative block w-full px-3 py-4 border bg-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm"
+            placeholder="' . esc_attr__('Buscar...', 'textdomain') . '"
+            value="' . get_search_query() . '" name="s" />
+        <button type="submit" class="sr-only">' . esc_html__('Buscar', 'textdomain') . '</button>
+    </form>';
+    return $form;
+}
+add_filter('get_search_form', 'custom_search_form');
+
+
+function render_elementor_template($atts) {
+    // Definir os atributos do shortcode, incluindo o ID do template
+    $atts = shortcode_atts([
+        'id' => '', // ID do template do Elementor
+    ], $atts);
+
+    // Verificar se o Elementor está ativo e o ID do template foi fornecido
+    if ( did_action('elementor/loaded') && !empty($atts['id']) ) {
+        // Retornar o conteúdo do template do Elementor
+        return Elementor\Plugin::instance()->frontend->get_builder_content_for_display($atts['id']);
+    } else {
+        return '<p>Erro: Elementor não está ativo ou o ID do template não foi especificado.</p>';
+    }
+}
+add_shortcode('elementor_template', 'render_elementor_template');
+
+// Função para incrementar a contagem de visualizações
+function set_post_views($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+
+    if ($count == '') {
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '1');
+    } else {
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+
+// Função para exibir a contagem de visualizações
+function get_post_views($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if ($count == '') {
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return '0 View';
+    }
+    return $count . ' Views';
+}
+
+// Incrementa visualizações sempre que um post é acessado
+function track_post_views($post_id) {
+    if (!is_single()) return;
+    if (empty($post_id)) {
+        global $post;
+        $post_id = $post->ID;
+    }
+    set_post_views($post_id);
+}
+add_action('wp_head', 'track_post_views');
 
 
 
