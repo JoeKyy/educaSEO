@@ -17,6 +17,7 @@ function educaseo_register_menus(): void {
     register_nav_menus(
         array(
             'main-menu' => esc_html__("Main Menu", "educaseo"),
+            'aside_menu'    => __( 'Aside Menu', 'educaseo' ),
             'footer_formacoes'    => __( 'Footer Formações', 'educaseo' ),
             'footer_cursos_rapidos' => __( 'Footer Cursos Rápidos', 'educaseo' ),
             'footer_conteudos_gratuitos' => __( 'Footer Conteúdos Gratuitos', 'educaseo' ),
@@ -162,5 +163,24 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
         $output .= '</li>';
     }
 }
+
+class Custom_Nav_Walker extends Walker_Nav_Menu {
+    // Função que gera cada item do menu
+    function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
+        $classes = 'block font-semibold text-black hover:text-pink-300 px-4 py-2 rounded';
+
+        // Adiciona classes ao link do item
+        $attributes = !empty($item->url) ? ' href="' . esc_url($item->url) . '"' : '';
+        $attributes .= ' class="' . esc_attr($classes) . '"';
+
+        // Constrói o HTML do item de menu
+        $output .= '<li class="menu-item-' . $item->ID . '">';
+        $output .= '<a' . $attributes . '>';
+        $output .= apply_filters('the_title', $item->title, $item->ID);
+        $output .= '</a>';
+        $output .= '</li>';
+    }
+}
+
 
 
