@@ -79,10 +79,29 @@
                                 ) );
                             ?>
                             <li>
-                                <a href="/educaSEO/student-registration/" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
-                                    Login
-                                </a>
+                                <?php if (is_user_logged_in()) :
+                                    $current_user = wp_get_current_user();
+                                    $user_id = get_current_user_id();
+                                ?>
+                                    <!-- Link para o painel com o avatar e nome do usuário -->
+                                    <a href="<?php echo esc_url(site_url('/dashboard')); ?>" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400">
+                                        Painel
+                                    </a>
+                                    <!-- Link de logout -->
+                                    <a href="<?php echo esc_url(wp_logout_url()); ?>" title="Sair" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-300 hover:bg-red-400 ml-4">
+                                        Sair
+                                    </a>
+                                <?php else : ?>
+                                    <!-- Botões de login e cadastro para usuários não logados -->
+                                    <a href="<?php echo home_url('/login'); ?>" title="Login" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-100 bg-pink-300 hover:bg-pink-400" data-toggle="modal" data-target="#modalLogin">
+                                        Login
+                                    </a>
+                                    <a href="<?php echo home_url('/cadastro'); ?>" title="Cadastre-se" class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-pink-300 bg-white hover:bg-gray-100 ml-4" data-toggle="modal" data-target="#modalSign">
+                                        Cadastre-se
+                                    </a>
+                                <?php endif; ?>
                             </li>
+
                         </ul>
                     </nav>
                 </div>

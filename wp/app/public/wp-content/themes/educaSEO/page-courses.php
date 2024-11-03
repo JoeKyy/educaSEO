@@ -7,7 +7,7 @@ get_header();
 
 // Configurações da consulta para cursos do Tutor LMS
 $args = array(
-    'post_type'      => 'courses',
+    'post_type'      => 'cursos',
     'posts_per_page' => 6, // Defina o número de cursos por página
     'paged'          => get_query_var('paged') ? get_query_var('paged') : 1,
 );
@@ -22,26 +22,26 @@ $query = new WP_Query($args);
         <div class="mx-4 space-y-4">
             <h3 class="text-xl font-bold mb-4">Categorias de Cursos</h3>
             <div class="space-y-4">
-				<div>
-					<h4 class="font-semibold text-base mb-2">Categorias</h4>
-					<ul class="space-y-2">
-						<?php
-							// Listagem das taxonomias (categorias) de cursos do Tutor LMS
-							$course_categories = get_terms(array(
-								'taxonomy'   => 'course-category',
-								'hide_empty' => true,
-							));
+                <?php
+                // Listagem das taxonomias (categorias) de cursos do Tutor LMS
+                $course_categories = get_terms(array(
+                    'taxonomy'   => 'course-category',
+                    'hide_empty' => true,
+                ));
 
-							if (!empty($course_categories) && !is_wp_error($course_categories)) :
-								foreach ($course_categories as $category) : ?>
-											<li>
-												<a href="<?php echo esc_url(get_term_link($category)); ?>" class="text-pink-300 hover:text-pink-500"><?php echo esc_html($category->name); ?></a>
-											</li>
-											<?php endforeach;
-							endif;
-						?>
-				</ul>
-			</div>
+                if (!empty($course_categories) && !is_wp_error($course_categories)) :
+                    foreach ($course_categories as $category) : ?>
+                        <div>
+                            <h4 class="font-semibold text-base mb-2"><?php echo esc_html($category->name); ?></h4>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="<?php echo esc_url(get_term_link($category)); ?>" class="text-pink-300 hover:text-pink-500"><?php echo esc_html($category->name); ?></a>
+                                </li>
+                            </ul>
+                        </div>
+                    <?php endforeach;
+                endif;
+                ?>
             </div>
         </div>
     </aside>
