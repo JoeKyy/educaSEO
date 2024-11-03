@@ -54,7 +54,7 @@ $query = new WP_Query($args);
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <?php if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post(); ?>
-                    <div class="bg-white space-y-6 overflow-hidden rounded-lg shadow">
+                    <div class="bg-white space-y-6 [&>div.e-con-inner]:space-y-6 overflow-hidden rounded-lg shadow">
                         <?php if (has_post_thumbnail()) : ?>
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('full', ['class' => 'w-full h-96 object-cover rounded-t-lg', 'alt' => get_the_title()]); ?>
