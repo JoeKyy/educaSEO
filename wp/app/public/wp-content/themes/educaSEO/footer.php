@@ -1,5 +1,5 @@
 </main>
-<footer class="bg-gray-300 font-regular text-black-900 py-24">
+<footer class="bg-gray-300 font-regular text-black-900 mt-10 py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-8">
 
         <!-- Footer Formações -->
