@@ -119,6 +119,25 @@ function track_post_views($post_id) {
 }
 add_action('wp_head', 'track_post_views');
 
+function add_slug_to_body_class($classes) {
+    if (is_singular()) { // Verifica se é uma página ou post individual
+        global $post;
+        if ($post) {
+            $classes[] = $post->post_name; // Adiciona apenas o slug
+        }
+    } elseif (is_home()) { // Página inicial do blog
+        $home_slug = basename(get_permalink(get_option('page_for_posts')));
+        $classes[] = $home_slug;
+    } elseif (is_archive()) { // Página de arquivo
+        $classes[] = 'archive';
+    } elseif (is_front_page()) { // Página inicial do site
+        $classes[] = 'home';
+    }
+
+    return $classes;
+}
+
+add_filter('body_class', 'add_slug_to_body_class');
 
 
 class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {

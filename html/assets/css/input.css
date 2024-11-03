@@ -109,11 +109,11 @@ body {
   max-width: min-content !important;
 }
 
-details {
+.faq details {
   padding: 1rem;
 }
 
-details summary {
+.faq details summary {
   width: 100%;
   text-align: left;
   cursor: pointer;
@@ -123,35 +123,35 @@ details summary {
   justify-content: space-between;
 }
 
-details summary span:first-child {
+.faq details summary span:first-child {
   font-size: 1.25rem;
   font-weight: 600;
   color: #1F2937;
 }
 
-details summary > span:last-child {
+.faq details summary > span:last-child {
   display: inline-block;
   transition: transform 0.3s ease;
 }
 
-details summary > span:last-child svg {
+.faq details summary > span:last-child svg {
   width: 1.25rem;
   height: 1.25rem;
   fill: #EC4899;
 }
 
-details summary[aria-expanded="true"] > span:last-child span:first-child {
+.faq details summary[aria-expanded="true"] > span:last-child span:first-child {
   display: block;
 }
 
-details summary[aria-expanded="true"] > span:last-child span:last-child {
+.faq details summary[aria-expanded="true"] > span:last-child span:last-child {
   display: none;
 }
 
-details summary[aria-expanded="false"] > span:last-child span:first-child {
+.faq details summary[aria-expanded="false"] > span:last-child span:first-child {
   display: none;
 }
 
-details summary[aria-expanded="false"] > span:last-child span:last-child {
+.faq details summary[aria-expanded="false"] > span:last-child span:last-child {
   display: block;
 }
