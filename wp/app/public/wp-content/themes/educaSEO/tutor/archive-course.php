@@ -72,21 +72,32 @@ $query = new WP_Query($args);
                                 <p class="text-base"><?php echo get_post_meta(get_the_ID(), 'curso_duracao', true) ?: 'Duração não especificada'; ?></p>
                             </div>
                             <div class="flex items-center justify-between">
-                                <a href="<?php the_permalink(); ?>" class="block text-center bg-pink-300 text-lg text-white py-2 px-8 rounded-lg font-semibold hover:bg-pink-600">Ver Curso</a>
-                                <span class="text-3xl text-pink-300">
+                                <a href="<?php the_permalink(); ?>" class="block text-center bg-pink-300 text-lg text-white-100 py-2 px-8 rounded-lg font-semibold hover:bg-pink-600">Ver Curso</a>
+                                <div class="flex items-center text-pink-300 text-3xl">
                                     <?php
                                     // Obter o rating do curso com Tutor LMS
                                     $course_rating = tutor_utils()->get_course_rating(get_the_ID());
                                     if ($course_rating) {
-                                        // Exibe o valor numérico da avaliação
-                                        echo number_format($course_rating->rating_avg, 1);
+                                        $rating_avg = round($course_rating->rating_avg); // Arredonda para o valor mais próximo
+
+                                        // Exibir as estrelas preenchidas de acordo com o rating
+                                        for ($i = 1; $i <= 5; $i++) {
+                                            if ($i <= $rating_avg) {
+                                                echo '<span class="text-pink-500">★</span>'; // Estrela preenchida
+                                            } else {
+                                                echo '<span class="text-gray-300">★</span>'; // Estrela vazia
+                                            }
+                                        }
+
+                                        // // Exibe o valor numérico da avaliação
+                                        // echo '<span class="ml-2 text-lg text-gray-600">' . number_format($course_rating->rating_avg, 1) . '</span>';
                                     } else {
-                                        echo 'Sem avaliação';
+                                        echo '<span class="text-gray-600">Sem avaliação</span>';
                                     }
                                     ?>
-                                    ★
-                                </span>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 <?php endwhile;
