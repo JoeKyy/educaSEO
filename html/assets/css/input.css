@@ -109,6 +109,36 @@ body {
   max-width: min-content !important;
 }
 
+
+details {
+  margin-bottom: 24px;
+  border: 2px solid #EC4899;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+details summary {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary span:first-child {
+  font-weight: 600;
+  color: #4B5563;
+}
+
+details summary > span:last-child {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+details summary[aria-expanded="true"] > span:last-child {
+  display: none;
+}
+
 .faq details {
   padding: 1rem;
 }
@@ -154,4 +184,8 @@ body {
 
 .faq details summary[aria-expanded="false"] > span:last-child span:last-child {
   display: block;
+}
+
+.object-cover img {
+  width: 100%;
 }

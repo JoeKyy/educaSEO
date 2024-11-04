@@ -22,6 +22,7 @@ function educaseo_register_menus(): void {
             'footer_cursos_rapidos' => __( 'Footer Cursos Rápidos', 'educaseo' ),
             'footer_conteudos_gratuitos' => __( 'Footer Conteúdos Gratuitos', 'educaseo' ),
             'footer_institucional' => __( 'Footer Institucional', 'educaseo' ),
+            'footer_eventos' => __( 'Footer Eventos', 'educaseo' ),
         )
     );
 }

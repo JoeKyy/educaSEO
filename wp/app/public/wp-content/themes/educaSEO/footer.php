@@ -53,9 +53,14 @@
             ) );
             ?>
             <h6 class="font-semibold text-pink-300 text-base my-2">Eventos</h6>
-            <ul>
-                <li><a href="<?php echo esc_url( home_url( '/hackathon-seo/' ) ); ?>" class="hover:text-gray-700">Hackathon SEO</a></li>
-            </ul>
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'footer_eventos',
+                'menu_class'     => 'hover:text-gray-700',
+                'container'      => 'ul',
+                'fallback_cb'    => false
+            ) );
+            ?>
         </div>
 
     </div>

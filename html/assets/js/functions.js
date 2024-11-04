@@ -70,3 +70,21 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.classList.toggle('hidden');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const fileButton = document.getElementById('custom-file-button');
+    const fileInput = document.getElementById('resume');
+
+    if (fileButton && fileInput) {
+        fileButton.addEventListener('click', function() {
+            fileInput.click(); // Abre o seletor de arquivos quando o botão é clicado
+        });
+
+        // Opcional: Exibir o nome do arquivo selecionado
+        fileInput.addEventListener('change', function() {
+            if (fileInput.files.length > 0) {
+                fileButton.textContent = `Arquivo: ${fileInput.files[0].name}`;
+            }
+        });
+    }
+});
